@@ -77,9 +77,9 @@
             bindings = <&kp F>;
         };
 
-        combo_dot {
+        combo_fslh {
             key-positions = <3 13>;
-            bindings = <&kp DOT>;
+            bindings = <&kp FSLH>;
         };
 
         combo_q {
