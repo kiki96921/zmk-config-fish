@@ -106,7 +106,7 @@
                         &kp L       &kp U       &kp DOT     &kp MINUS           &kp D       &kp W       &kp R       &kp Y       
 &lt 1 ESC   &kp E       &mt LSHFT I &mt LCTRL A &mt LALT O  &kp COMMA           &kp G       &mt RALT T  &mt RCTRL N &mt RSHFT S &kp H       &lt 2 P     
             &kp Z       &lt 3 X     &lt 2 C     &lt 1 V                                     &kp K       &kp M       &kp J       &kp B       
-                                                &lt 2 SPACE &mt LGUI TAB        &lt 3 RET   &kp BSPC    
+                                                &mt LGUI TAB &lt 2 SPACE        &lt 3 RET   &kp BSPC    
             >;
         };
 
