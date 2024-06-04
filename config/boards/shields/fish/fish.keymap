@@ -106,25 +106,25 @@
                         &kp L       &kp U       &kp DOT     &kp MINUS           &kp D       &kp W       &kp R       &kp Y       
 &lt 1 ESC   &kp E       &mt LSHFT I &mt LCTRL A &mt LALT O  &kp COMMA           &kp G       &mt RALT T  &mt RCTRL N &mt RSHFT S &kp H       &lt 2 P     
             &kp Z       &lt 3 X     &lt 2 C     &lt 1 V                                     &kp K       &kp M       &kp J       &kp B       
-                                                &mt LGUI SPACE &lt 2 TAB        &lt 3 RET   &mt RSHFT BSPC 
+                                                &lt 2 TAB   &mt LGUI SPACE      &mt RSHFT BSPC &lt 3 RET 
             >;
         };
 
         layer_L1 {
             bindings = <
-                        &kp LBKT    &kp RBKT    &kp AT      &kp COLON           &kp HOME    &kp BSPC    &kp UP      &kp DEL     
-&kp TILDE   &kp COLON   &kp LS(INT3) &kp LS(INT1) &kp INT3  &kp SEMI            &kp END     &kp LEFT    &kp DOWN    &kp RIGHT   &kp RCTRL   &kp INS     
+                        &kp RBKT    &kp NUHS    &kp AT      &kp SQT             &kp HOME    &kp BSPC    &kp UP      &kp DEL     
+&kp TILDE   &kp SQT     &kp LS(INT3) &kp LS(INT1) &kp INT3  &kp SEMI            &kp END     &kp LEFT    &kp DOWN    &kp RIGHT   &kp RCTRL   &kp INS     
             &kp GRAVE   &kp LSHFT   &kp LGUI    &trans                                      &kp ESC     &kp PG_UP   &kp PG_DN   &kp PSCRN   
-                                                &trans      &trans              &kp RET     &lt 3 SPACE 
+                                                &kp LS(K_APP) &kp K_APP         &kp RET     &lt 3 SPACE 
             >;
         };
 
         layer_L2 {
             bindings = <
-                        &trans      &trans      &trans      &kp CARET           &kp STAR    &kp N7      &kp N8      &kp N9      
-&trans      &kp C_VOL_DN &kp C_VOL_UP &trans    &trans      &trans              &kp DOT     &kp N4      &kp N5      &kp N6      &kp PLUS    &kp MINUS   
-            &trans      &kp LSHFT   &trans      &trans                                      &kp N1      &kp N2      &kp N3      &kp FSLH    
-                                                &lt 3 BSPC  &trans              &trans      &kp N0      
+                        &trans      &kp RBKT    &kp NUHS    &kp CARET           &kp STAR    &kp N7      &kp N8      &kp N9      
+&kp K_APP   &kp C_VOL_DN &kp C_VOL_UP &kp STAR  &kp LPAR    &kp COMMA           &kp DOT     &kp N4      &kp N5      &kp N6      &kp PLUS    &kp MINUS   
+            &trans      &kp LSHFT   &kp SQT     &kp DQT                                     &kp N1      &kp N2      &kp N3      &kp FSLH    
+                                                &mkp MB1    &mkp MB2            &trans      &kp N0      
             >;
         };
 
