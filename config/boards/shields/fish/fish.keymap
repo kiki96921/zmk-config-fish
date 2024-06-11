@@ -82,14 +82,19 @@
             bindings = <&mo 1>;
         };
 
-        combo_dot {
+        combo_fslh {
             key-positions = <3 13>;
-            bindings = <&kp DOT>;
+            bindings = <&kp FSLH>;
         };
 
         combo_q {
             key-positions = <9 20>;
             bindings = <&kp Q>;
+        };
+
+        combo_mo_3 {
+            key-positions = <28 29>;
+            bindings = <&mo 3>;
         };
     };
     
@@ -103,10 +108,10 @@
 
         layer_L0 {
             bindings = <
-                        &kp L       &kp U       &kp DOT     &kp MINUS           &kp D       &kp W       &kp R       &kp Y       
+                        &mt LGUI L  &kp U       &kp DOT     &kp MINUS           &kp D       &kp W       &kp R       &mt RGUI Y  
 &lt 1 ESC   &kp E       &mt LSHFT I &mt LCTRL A &mt LALT O  &kp COMMA           &kp G       &mt RALT T  &mt RCTRL N &mt RSHFT S &kp H       &lt 2 P     
             &kp Z       &lt 3 X     &lt 2 C     &lt 1 V                                     &kp K       &kp M       &kp J       &kp B       
-                                                &lt 2 TAB   &mt LGUI SPACE      &mt RSHFT BSPC &lt 3 RET 
+                                                &lt 2 TAB   &lt 1 SPACE         &mt RSHFT BSPC &lt 3 RET 
             >;
         };
 
