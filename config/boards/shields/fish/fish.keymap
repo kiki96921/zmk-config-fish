@@ -117,9 +117,9 @@
 
         layer_L1 {
             bindings = <
-                        &kp RBKT    &kp NUHS    &kp AT      &kp SQT             &kp HOME    &kp BSPC    &kp UP      &kp DEL     
+                        &kp RBKT    &kp NUHS    &kp LBKT    &kp SQT             &kp HOME    &kp BSPC    &kp UP      &kp DEL     
 &kp TILDE   &kp SQT     &kp LS(INT3) &kp LS(INT1) &kp INT3  &kp SEMI            &kp END     &kp LEFT    &kp DOWN    &kp RIGHT   &kp RCTRL   &kp INS     
-            &kp GRAVE   &kp LSHFT   &kp LGUI    &trans                                      &kp ESC     &kp PG_UP   &kp PG_DN   &kp PSCRN   
+            &kp GRAVE   &kp LSHFT   &kp LGUI    &trans                                      &none       &kp PG_UP   &kp PG_DN   &kp PSCRN   
                                                 &kp LS(K_APP) &kp K_APP         &kp RSHFT   &trans      
             >;
         };
