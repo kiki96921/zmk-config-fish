@@ -143,15 +143,37 @@
         };
     };
 
+    behaviors {
+        new_behavior_thumb_mod: new_behavior_thumb_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR_THUMB_MOD";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+
+        new_behavior_thumb_lt: new_behavior_thumb_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR_THUMB_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_L0 {
             bindings = <
-                            &mt LGUI L        &kp U    &kp DOT    &kp MINUS      &kp D                   &kp W                &kp R  &mt RGUI Y
-&mt LEFT_ALT ESCAPE  &kp E  &kp I             &kp A    &kp O      &kp COMMA      &kp G                   &kp T                &kp N  &kp S       &kp H  &mt RIGHT_WIN P
-                     &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                           &kp K                &kp M  &kp J       &kp B
-                                                       &lt 2 TAB  &lt 1 SPACE    &mt RIGHT_CONTROL BSPC  &mt RIGHT_SHIFT RET
+                     &mt LEFT_ALT L    &kp U    &kp DOT                       &kp MINUS                         &kp D                                       &kp W                                    &kp R  &mt RIGHT_ALT Y
+&lt 1 ESCAPE  &kp E  &kp I             &kp A    &kp O                         &kp COMMA                         &kp G                                       &kp T                                    &kp N  &kp S            &kp H  &mt RIGHT_WIN P
+              &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                                                                                     &kp K                                    &kp M  &kp J            &kp B
+                                                &new_behavior_thumb_lt 2 TAB  &new_behavior_thumb_lt 1 SPACE    &new_behavior_thumb_mod RIGHT_CONTROL BSPC  &new_behavior_thumb_mod RIGHT_SHIFT RET
             >;
         };
 
