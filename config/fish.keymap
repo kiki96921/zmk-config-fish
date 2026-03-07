@@ -92,11 +92,25 @@
             bindings = <&kp INT_HENKAN>;
             key-positions = <16 15>;
         };
+
+        muhennkann {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <12 11>;
+        };
     };
 
     // キーに入力を割り当てる
     // 型（&...）は https://zmk.dev/docs/behaviors/... を参照
     // キーコードは https://zmk.dev/docs/codes/... を参照
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
