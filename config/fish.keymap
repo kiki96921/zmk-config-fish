@@ -163,6 +163,24 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
+
+        new_behavior_peri: new_behavior_peri {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR_PERI";
+            bindings = <&new_macro_period>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        new_behavior_comma: new_behavior_comma {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR_COMMA";
+            bindings = <&new_macro_comma>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -170,8 +188,8 @@
 
         layer_L0 {
             bindings = <
-                     &mt LEFT_ALT L    &kp U    &kp DOT                       &kp MINUS                         &kp D                                       &kp W                                    &kp R  &mt RIGHT_ALT Y
-&lt 1 ESCAPE  &kp E  &kp I             &kp A    &kp O                         &kp COMMA                         &kp G                                       &kp T                                    &kp N  &kp S            &kp H  &mt RIGHT_WIN P
+                     &mt LEFT_ALT L    &kp U    &new_behavior_peri 0 PERIOD   &kp MINUS                         &kp D                                       &kp W                                    &kp R  &mt RIGHT_ALT Y
+&lt 1 ESCAPE  &kp E  &kp I             &kp A    &kp O                         &new_behavior_comma 0 COMMA       &kp G                                       &kp T                                    &kp N  &kp S            &kp H  &mt RIGHT_WIN P
               &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                                                                                     &kp K                                    &kp M  &kp J            &kp B
                                                 &new_behavior_thumb_lt 2 TAB  &new_behavior_thumb_lt 1 SPACE    &new_behavior_thumb_mod RIGHT_CONTROL BSPC  &new_behavior_thumb_mod RIGHT_SHIFT RET
             >;
