@@ -68,11 +68,6 @@
             bindings = <&kp F>;
         };
 
-        combo_mo_1 {
-            key-positions = <30 31>;
-            bindings = <&mo 1>;
-        };
-
         combo_fslh {
             key-positions = <3 13>;
             bindings = <&kp FSLH>;
@@ -104,11 +99,25 @@
     // キーコードは https://zmk.dev/docs/codes/... を参照
 
     macros {
-        new_macro: new_macro {
+        new_macro_period: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp PERIOD &kp SPACE>;
             label = "NEW_MACRO";
+        };
+
+        new_macro_comma: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA &kp SPACE>;
+            label = "NEW_MACRO2";
+        };
+
+        new_macro_que: new_macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(SLASH) &kp SPACE>;
+            label = "NEW_MACRO3";
         };
     };
 
@@ -117,10 +126,10 @@
 
         layer_L0 {
             bindings = <
-                  &mt LGUI L   &kp U        &kp DOT     &kp MINUS      &kp D           &kp W       &kp R        &mt RGUI Y
-&lt 1 ESC  &kp E  &mt LSHFT I  &mt LCTRL A  &mt LALT O  &kp COMMA      &kp G           &mt RALT T  &mt RCTRL N  &mt RSHFT S  &kp H  &lt 2 P
-           &kp Z  &lt 3 X      &lt 2 C      &lt 1 V                                    &kp K       &kp M        &kp J        &kp B
-                                            &lt 2 TAB   &lt 1 SPACE    &mt RSHFT BSPC  &lt 3 RET
+                    &mt LGUI L   &kp U        &kp DOT     &kp MINUS      &kp D           &kp W          &kp R        &mt RGUI Y
+&mt LCTRL Q  &kp E  &mt LSHFT I  &mt LCTRL A  &mt LALT O  &kp COMMA      &kp G           &mt RALT T     &mt RCTRL N  &mt RSHFT S  &kp H  &mt RIGHT_WIN P
+             &kp Z  &lt 3 X      &lt 2 C      &lt 1 V                                    &kp K          &kp M        &kp J        &kp B
+                                              &lt 2 TAB   &lt 1 SPACE    &mt RSHFT BSPC  &mt RCTRL RET
             >;
         };
 
