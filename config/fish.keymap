@@ -75,7 +75,7 @@
 
         combo_q {
             key-positions = <9 20>;
-            bindings = <&kp Q>;
+            bindings = <&kp ESCAPE>;
         };
 
         combo_mo_3 {
@@ -91,6 +91,26 @@
         muhennkann {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 11>;
+        };
+
+        ctrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <1 11>;
+        };
+
+        ctrl2 {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <16 6>;
+        };
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <2 12>;
+        };
+
+        shift2 {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <5 15>;
         };
     };
 
@@ -126,10 +146,10 @@
 
         layer_L0 {
             bindings = <
-                    &mt LGUI L   &kp U        &kp DOT     &kp MINUS      &kp D           &kp W          &kp R        &mt RGUI Y
-&mt LCTRL Q  &kp E  &mt LSHFT I  &mt LCTRL A  &mt LALT O  &kp COMMA      &kp G           &mt RALT T     &mt RCTRL N  &mt RSHFT S  &kp H  &mt RIGHT_WIN P
-             &kp Z  &lt 3 X      &lt 2 C      &lt 1 V                                    &kp K          &kp M        &kp J        &kp B
-                                              &lt 2 TAB   &lt 1 SPACE    &mt RSHFT BSPC  &mt RCTRL RET
+                            &mt LGUI L        &kp U    &kp DOT    &kp MINUS      &kp D                   &kp W                &kp R        &mt RGUI Y
+&mt LEFT_ALT ESCAPE  &kp E  &kp I             &kp A    &kp O      &kp COMMA      &kp G                   &mt RALT T           &mt RCTRL N  &mt RSHFT S  &kp H  &mt RIGHT_WIN P
+                     &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                           &kp K                &kp M        &kp J        &kp B
+                                                       &lt 2 TAB  &lt 1 SPACE    &mt RIGHT_CONTROL BSPC  &mt RIGHT_SHIFT RET
             >;
         };
 
