@@ -53,16 +53,6 @@
         timeout-ms = <150>;
         require-prior-idle-ms = <150>;
 
-        combo_mt_lshft_int5 {
-            key-positions = <21 22>;
-            bindings = <&mt LSHFT INT5>;
-        };
-
-        combo_mt_rshft_int4 {
-            key-positions = <25 26>;
-            bindings = <&mt RSHFT INT4>;
-        };
-
         combo_f {
             key-positions = <4 14>;
             bindings = <&kp F>;
@@ -75,7 +65,7 @@
 
         combo_q {
             key-positions = <9 20>;
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp Q>;
         };
 
         combo_mo_3 {
@@ -84,12 +74,12 @@
         };
 
         henkan {
-            bindings = <&kp INT_HENKAN>;
+            bindings = <&mt RIGHT_SHIFT INT_HENKAN>;
             key-positions = <16 15>;
         };
 
         muhennkann {
-            bindings = <&kp INT_MUHENKAN>;
+            bindings = <&mt LEFT_SHIFT INT_MUHENKAN>;
             key-positions = <12 11>;
         };
 
@@ -146,9 +136,9 @@
 
         layer_L0 {
             bindings = <
-                            &mt LGUI L        &kp U    &kp DOT    &kp MINUS      &kp D                   &kp W                &kp R        &mt RGUI Y
-&mt LEFT_ALT ESCAPE  &kp E  &kp I             &kp A    &kp O      &kp COMMA      &kp G                   &mt RALT T           &mt RCTRL N  &mt RSHFT S  &kp H  &mt RIGHT_WIN P
-                     &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                           &kp K                &kp M        &kp J        &kp B
+                            &mt LGUI L        &kp U    &kp DOT    &kp MINUS      &kp D                   &kp W                &kp R  &mt RGUI Y
+&mt LEFT_ALT ESCAPE  &kp E  &kp I             &kp A    &kp O      &kp COMMA      &kp G                   &kp T                &kp N  &kp S       &kp H  &mt RIGHT_WIN P
+                     &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                           &kp K                &kp M  &kp J       &kp B
                                                        &lt 2 TAB  &lt 1 SPACE    &mt RIGHT_CONTROL BSPC  &mt RIGHT_SHIFT RET
             >;
         };
