@@ -95,6 +95,11 @@
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <16 6>;
         };
+
+        kyu- {
+            bindings = <&kp Q>;
+            key-positions = <27 18>;
+        };
     };
 
     // キーに入力を割り当てる
