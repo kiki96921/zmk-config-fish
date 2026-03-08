@@ -148,6 +148,13 @@
             bindings = <&kp RIGHT_BRACKET &kp NON_US_BACKSLASH &kp ENTER &kp LEFT>;
             label = "NEW_MACRO_KAKKO";
         };
+
+        new_macro_nn: new_macro_nn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "NEW_MACRO_NN";
+        };
     };
 
     behaviors {
