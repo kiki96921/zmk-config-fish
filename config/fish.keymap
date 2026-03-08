@@ -63,6 +63,21 @@
             bindings = <&new_behavior_que 0 SLASH>;
         };
 
+        combo_ze {
+            key-positions = <9 20>;
+            bindings = <&new_macro_ze>;
+        };
+
+        combo_kakko {
+            key-positions = <0 1 2>;
+            bindings = <&new_macro_kakko>;
+        };
+
+        combo_nn {
+            key-positions = <16 17>;
+            bindings = <&new_macro_nn>;
+        };
+
         combo_mo_3 {
             key-positions = <28 29>;
             bindings = <&mo 3>;
@@ -112,42 +127,42 @@
         new_macro_period: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp SPACE>;
+            bindings = <&kp PERIOD>, <&kp SPACE>;
             label = "NEW_MACRO";
         };
 
         new_macro_comma: new_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COMMA &kp SPACE>;
+            bindings = <&kp COMMA>, <&kp SPACE>;
             label = "NEW_MACRO2";
         };
 
         new_macro_que: new_macro3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(SLASH) &kp SPACE>;
+            bindings = <&kp RS(SLASH)>, <&kp SPACE>;
             label = "NEW_MACRO3";
         };
 
         new_macro_ze: new_macro_ze {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Z &kp E>;
+            bindings = <&kp Z>, <&kp E>;
             label = "NEW_MACRO_ZE";
         };
 
         new_macro_kakko: new_macro_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp NUHS &kp ENTER &kp LEFT>;
+            bindings = <&kp RBKT>, <&kp NUHS>, <&kp ENTER>, <&kp LEFT>;
             label = "NEW_MACRO_KAKKO";
         };
 
         new_macro_nn: new_macro_nn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp N>;
+            bindings = <&kp N>, <&kp N>;
             label = "NEW_MACRO_NN";
         };
     };
@@ -208,7 +223,7 @@
         layer_L0 {
             bindings = <
                      &mt LEFT_ALT L    &kp U    &new_behavior_peri 0 PERIOD   &kp MINUS                         &kp D                                       &kp W                                    &kp R  &mt RIGHT_ALT Y
-&lt 1 ESCAPE  &kp E  &kp I             &kp A    &kp O                         &new_behavior_comma 0 COMMA       &kp G                                       &kp T                                    &kp N  &kp S            &kp H  &mt RIGHT_WIN P
+&lt 1 ESCAPE  &kp E             &kp I  &kp A                         &kp O     &new_behavior_comma 0 COMMA      &kp G                                       &kp T                                    &kp N  &kp S            &kp H  &mt RIGHT_WIN P
               &kp Z  &mt LEFT_SHIFT X  &lt 2 C  &lt 1 V                                                                                                     &kp K                                    &kp M  &kp J            &kp B
                                                 &new_behavior_thumb_lt 2 TAB  &new_behavior_thumb_lt 1 SPACE    &new_behavior_thumb_mod RIGHT_CONTROL BSPC  &new_behavior_thumb_mod RIGHT_SHIFT RET
             >;
