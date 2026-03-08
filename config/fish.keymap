@@ -63,11 +63,6 @@
             bindings = <&new_behavior_que 0 SLASH>;
         };
 
-        combo_q {
-            key-positions = <9 20>;
-            bindings = <&kp Q>;
-        };
-
         combo_mo_3 {
             key-positions = <28 29>;
             bindings = <&mo 3>;
