@@ -107,7 +107,22 @@
             bindings = <&kp Q>;
             key-positions = <27 18>;
         };
-    };
+        combo_ze {
+            key-positions = <9 20>;
+            bindings = <&new_macro_ze>;
+        };
+
+        combo_kakko {
+            key-positions = <0 1 2>;
+            bindings = <&new_macro_kakko>;
+        };
+
+        combo_nn {
+            key-positions = <16 17>;
+            bindings = <&new_macro_nn>;
+        };
+
+};
 
     // キーに入力を割り当てる
     // 型（&...）は https://zmk.dev/docs/behaviors/... を参照
