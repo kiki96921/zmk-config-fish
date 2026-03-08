@@ -141,6 +141,20 @@
             bindings = <&kp Z &kp E>;
             label = "NEW_MACRO_ZE";
         };
+
+        new_macro_kakko: new_macro_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp NON_US_BACKSLASH &kp ENTER &kp LEFT>;
+            label = "NEW_MACRO_KAKKO";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
