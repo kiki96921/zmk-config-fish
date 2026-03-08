@@ -60,7 +60,7 @@
 
         combo_fslh {
             key-positions = <3 13>;
-            bindings = <&kp FSLH>;
+            bindings = <&new_behavior_que 0 SLASH>;
         };
 
         combo_q {
@@ -185,6 +185,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR_COMMA";
             bindings = <&new_macro_comma>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        new_behavior_que: new_behavior_que {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR_QUE";
+            bindings = <&new_macro_que>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
