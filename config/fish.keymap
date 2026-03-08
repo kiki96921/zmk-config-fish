@@ -155,7 +155,6 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
             quick-tap-ms = <175>;
-            hold-trigger-on-release;
         };
 
         new_behavior_thumb_lt: new_behavior_thumb_lt {
