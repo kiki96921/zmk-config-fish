@@ -69,6 +69,7 @@
         combo_nn {
             key-positions = <16 17>;
             bindings = <&new_macro_nn>;
+            layers = <0>;
         };
 
         combo_mo_3 {
