@@ -235,10 +235,10 @@
 
         layer_L2 {
             bindings = <
-                         &trans        &mkp MB1           &mkp MB2               &kp EQUAL    &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9
-&kp K_APP  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_APPLICATION  &kp LS(K_APPLICATION)  &kp COMMA    &kp DOT          &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp MINUS
-           &trans        &kp LSHFT     &kp EQUAL          &trans                                               &kp N1  &kp N2  &kp N3  &kp FSLH
-                                                          &mkp MB1               &mkp MB2     &kp RSHFT        &kp N0
+                          &trans        &mkp MB1           &mkp MB2               &kp EQUAL    &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9
+&kp ESCAPE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_APPLICATION  &kp LS(K_APPLICATION)  &kp COMMA    &kp DOT          &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp MINUS
+            &trans        &kp LSHFT     &kp EQUAL          &trans                                               &kp N1  &kp N2  &kp N3  &kp FSLH
+                                                           &mkp MB1               &mkp MB2     &kp RSHFT        &kp N0
             >;
         };
 
