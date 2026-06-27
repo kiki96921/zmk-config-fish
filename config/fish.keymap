@@ -217,19 +217,19 @@
 
         layer_L0 {
             bindings = <
-                            &mt LEFT_ALT L    &kp U                       &new_behavior_peri 0 PERIOD  &kp MINUS                      &kp D                                 &kp W                                  &kp R  &new_behavior_balance_mod RIGHT_ALT Y
-&mt LEFT_WIN ESCAPE  &kp E  &kp I             &kp A                       &kp O                        &new_behavior_comma 0 COMMA    &kp G                                 &kp T                                  &kp N  &kp S                                  &kp H  &new_behavior_balance_mod RIGHT_WIN P
-                     &kp Z  &mt LEFT_SHIFT X  &new_behavior_thumb_lt 2 C  &new_behavior_thumb_lt 1 V                                                                        &kp K                                  &kp M  &kp J                                  &kp B
-                                                                          &lt 2 TAB                    &lt 1 SPACE                    &new_behavior_thumb RIGHT_SHIFT BSPC  &new_behavior_thumb RIGHT_CONTROL RET
+                       &mt LEFT_ALT L    &kp U                       &new_behavior_peri 0 PERIOD  &kp MINUS                      &kp D                                 &kp W                                  &kp R  &new_behavior_balance_mod RIGHT_ALT Y
+&mt LEFT_WIN Q  &kp E  &kp I             &kp A                       &kp O                        &new_behavior_comma 0 COMMA    &kp G                                 &kp T                                  &kp N  &kp S                                  &kp H  &new_behavior_balance_mod RIGHT_WIN P
+                &kp Z  &mt LEFT_SHIFT X  &new_behavior_thumb_lt 2 C  &new_behavior_thumb_lt 1 V                                                                        &kp K                                  &kp M  &kp J                                  &kp B
+                                                                     &lt 2 TAB                    &lt 1 SPACE                    &new_behavior_thumb RIGHT_SHIFT BSPC  &new_behavior_thumb RIGHT_CONTROL RET
             >;
         };
 
         layer_L1 {
             bindings = <
-                      &kp RBKT      &kp NUHS      &kp LBKT       &kp SQT      &kp HOME   &kp BSPC  &kp UP     &kp DEL
-&kp TILDE  &kp SQT    &kp LS(INT3)  &kp LS(INT1)  &kp INT3       &kp SEMI     &kp END    &kp LEFT  &kp DOWN   &kp RIGHT  &kp RCTRL  &kp INS
-           &kp GRAVE  &kp LSHFT     &kp LGUI      &trans                                 &none     &kp PG_UP  &kp PG_DN  &kp PSCRN
-                                                  &kp LS(K_APP)  &kp K_APP    &kp RSHFT  &trans
+                       &kp RBKT      &kp NUHS      &kp LBKT       &kp SQT      &kp HOME   &kp BSPC  &kp UP     &kp DEL
+&kp ESCAPE  &kp SQT    &kp LS(INT3)  &kp LS(INT1)  &kp INT3       &kp SEMI     &kp END    &kp LEFT  &kp DOWN   &kp RIGHT  &kp RCTRL  &kp INS
+            &kp GRAVE  &kp LSHFT     &kp LGUI      &trans                                 &none     &kp PG_UP  &kp PG_DN  &kp PSCRN
+                                                   &kp LS(K_APP)  &kp K_APP    &kp RSHFT  &trans
             >;
         };
 
