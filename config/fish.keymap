@@ -238,7 +238,7 @@
             bindings = <
                        &kp RBKT      &kp NUHS      &kp LBKT       &kp SQT      &kp HOME   &kp BSPC  &kp UP     &kp DEL
 &kp ESCAPE  &kp SQT    &kp LS(INT3)  &kp LS(INT1)  &kp INT3       &kp SEMI     &kp END    &kp LEFT  &kp DOWN   &kp RIGHT  &kp RCTRL  &kp INS
-            &kp GRAVE  &kp LSHFT     &kp LGUI      &trans                                 &none     &kp PG_UP  &kp PG_DN  &kp PSCRN
+            &kp GRAVE  &kp LSHFT     &mo 3         &trans                                 &none     &kp PG_UP  &kp PG_DN  &kp PSCRN
                                                    &kp LS(K_APP)  &kp K_APP    &kp RSHFT  &trans
             >;
         };
@@ -247,7 +247,7 @@
             bindings = <
                           &trans        &mkp MB1           &mkp MB2               &kp EQUAL    &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9
 &kp ESCAPE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_APPLICATION  &kp LS(K_APPLICATION)  &kp COMMA    &kp DOT          &kp N4  &kp N5  &kp N6  &kp KP_PLUS  &kp MINUS
-            &trans        &kp LSHFT     &kp EQUAL          &trans                                               &kp N1  &kp N2  &kp N3  &kp FSLH
+            &trans        &kp LSHFT     &kp EQUAL          &mo 3                                                &kp N1  &kp N2  &kp N3  &kp FSLH
                                                            &mkp MB1               &mkp MB2     &kp RSHFT        &kp N0
             >;
         };
