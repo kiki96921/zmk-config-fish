@@ -229,7 +229,7 @@
             bindings = <
                                          &mt LEFT_ALT L    &kp U                       &new_behavior_peri 0 PERIOD  &kp MINUS                      &kp D                                 &kp W                                  &kp R  &new_behavior_balance_mod RIGHT_ALT Y
 &mt LEFT_WIN ESCAPE  &kp E               &kp I             &kp A                       &kp O                        &new_behavior_comma 0 COMMA    &kp G                                 &kp T                                  &kp N  &kp S                                  &kp H  &new_behavior_balance_mod RIGHT_WIN P
-                     &mt Z LEFT_CONTROL  &mt LEFT_SHIFT X  &new_behavior_thumb_lt 2 C  &new_behavior_thumb_lt 1 V                                                                        &kp K                                  &kp M  &kp J                                  &kp B
+                     &mt LEFT_CONTROL Z  &mt LEFT_SHIFT X  &new_behavior_thumb_lt 2 C  &new_behavior_thumb_lt 1 V                                                                        &kp K                                  &kp M  &kp J                                  &kp B
                                                                                        &lt 2 TAB                    &lt 1 SPACE                    &new_behavior_thumb RIGHT_SHIFT BSPC  &new_behavior_thumb RIGHT_CONTROL RET
             >;
         };
